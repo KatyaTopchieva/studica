@@ -1,0 +1,24 @@
+{
+  "name": "studica",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+
+  "author": "Katya Topchieva",
+  "license": "ISC",
+
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-webp": "^4.0.1",
+    "imagemin-mozjpeg": "^10.0.0",
+    "sass": "^1.56.2"
+  }
+}
