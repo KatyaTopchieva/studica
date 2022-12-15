@@ -1,9 +1,6 @@
-.page {
-  background-color: aqua;
-  width: 100%;
-}
+@import '../fonts/fonts.css';
+@import './nullstyle.scss';
+@import './header.scss';
+@import './page.scss';
 
-.header {
-  height: 50px;
-  background-color: red;
-}
+$fontfamily: 'OpenSans';
