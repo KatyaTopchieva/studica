@@ -11,25 +11,25 @@
   <section class="header">
     <div class="header__container">
       <div class="header__top-block">
-        <a href="" class="header__logo"><img src="./src/images/logo.svg" alt="Логотип"/></a>
-        <div class="header__actions">
-          <a class="header__actions-region" href="">
-            <img class="header__actions-arrow" src="./src/images/city.svg" alt="Стрелка"/>
-            <p class="header__actions-region-name">Moskow</p>
-          </a>
-          <form class="header__searchform">
-            <div class="header__searchform-wrapper">
-              <img src="./src/images/search.svg" alt="Поиск"/>
-              <input class="header__searchform-input" name="searcheducation"
-                placeholder="Учебное заведение, специальность или профессия"/>
-                <button class="header__searchform-close-button" type="button">
-                  <img src="./src/images/search_close.svg" alt="Закрыть"/>      
-                </button>
-            </div>
-          </form>
+        <a href="" class="header__logo"><img class="header__logo-image" src="./src/images/logo.svg" alt="Логотип"/></a>
+        <a class="header__region" href="">
+          <img class="header__region-arrow" src="./src/images/city.svg" alt="Стрелка"/>
+          <p class="header__region-name">Москва</p>
+        </a>
+        <form class="header__searchform">
+          <div class="header__searchform-wrapper">
+            <img class="header__searchform-icon" src="./src/images/search.svg" alt="Поиск"/>
+            <input class="header__searchform-input" name="searcheducation"
+              placeholder="Учебное заведение, специальность или профессия"/>
+            <button class="header__searchform-close-button" type="button">
+              <img class="header__searchform-close-image" src="./src/images/search_close.svg" alt="Закрыть"/>      
+            </button>
+          </div>
+        </form>
+        <div class="header__like-profile-wrapper">
           <div class="header__like-container">
-            <button class="header__button-like" type="button"></button>
-            <span class="header__like-counter"></span>
+            <button class="header__button-like" type="button"><img src="./src/images/like.svg" alt="Лайк"/></button>
+            <span class="header__like-counter">0</span>
           </div>
           <div class="header__profile">
             <h2 class="header__profile-name">Екатерина</h2>
@@ -37,18 +37,26 @@
           </div>
         </div>
       </div>
-
+      <div class="header__menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <nav class="header__navigation">
-        <ul class="heder__menu">
-          <li><a class="header__menu-item">Вузы</a></li>
-          <li><a class="header__menu-item">Колледжи</a></li>
-          <li><a class="header__menu-item">Техникумы</a></li>
-          <li><a class="header__menu-item">Училища</a></li>
-          <li><a class="header__menu-item">Специальности</a></li>
-          <li><a class="header__menu-item">Профессии</a></li>
-          <li><a class="header__menu-item">Отзывы</a></li>
-          <li><a class="header__menu-item">Учебным заведениям</a></li>
-          <li><a class="header__menu-item">Тест на профориентацию</a></li>
+        <ul class="header__menu">
+          <li class="header__menu-list"><a class="header__menu-item">Вузы</a></li>
+          <li class="header__menu-list"><a class="header__menu-item">Колледжи</a></li>
+          <li class="header__menu-list"><a class="header__menu-item">Техникумы</a></li>
+          <li class="header__menu-list"><a class="header__menu-item">Училища</a></li>
+          <li class="header__menu-list"><a class="header__menu-item">Специальности</a></li>
+          <li class="header__menu-list"><a class="header__menu-item">Профессии</a></li>
+          <li class="header__menu-list"><a class="header__menu-item">Отзывы</a></li>
+          <li class="header__menu-list"><a class="header__menu-item">Учебным заведениям</a></li>
+          <li class="header__menu-list">
+            <a class="header__menu-item">Тест на профориентацию</a>
+            <div class="header__menu-item-row"></div>
+            <img class="header__menu-item-arrow" src="./src/images/menu_item_arrow.svg" alt="Указатель"/>
+          </li>
         </ul>
       </nav>
     </div>

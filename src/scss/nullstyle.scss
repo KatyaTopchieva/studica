@@ -6,5 +6,6 @@ html,body{height: 100%;width: 100%;}
 button{cursor: pointer;}
 button::-moz-focus-inner{padding: 0;border: 0;}
 a,a:visited{text-decoration: none;}
-a:hover{text-decoration: none;cursor: pointer;}
+a:hover{text-decoration: none;cursor: pointer;color:#222}
 img{vertical-align: top;}
+input:focus{outline: none;}

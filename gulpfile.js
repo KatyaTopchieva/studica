@@ -5,6 +5,9 @@ const minify = require('gulp-clean-css');
 const terser = require('gulp-terser');
 const imagemin = require('gulp-imagemin');
 const imagewebp = require('gulp-webp');
+const ttf2woff = require('gulp-ttf2woff');
+const ttf2woff2 = require('gulp-ttf2woff2');
+const fs = require('fs');
 
 // scss
 function compileScss(){
@@ -25,8 +28,8 @@ function jsMin(){
 // images
 function optimizeImage(){
   return src('src/images/*.{jpg,png}')
-  .pipe(imagemin())
-  .pipe(dest('dist/images'))
+    .pipe(imagemin())
+    .pipe(dest('dist/images'))
 }
 
 // wedp images
@@ -36,11 +39,22 @@ function webpImage(){
     .pipe(dest('dist/images'))
 }
 
+// fonts
+function fonts(){
+  src('src/fonts/**/*.ttf')
+    .pipe(ttf2woff())
+    .pipe(dest('dist/fonts'))
+  return src('src/fonts/**/*.ttf')
+    .pipe(ttf2woff2())
+    .pipe(dest('dist/fonts'))
+}
+
 function watchTask(){
   watch('src/scss/*.scss', compileScss);
   watch('src/js/*.js', jsMin);
   watch('src/images/*.{jpg,png}', optimizeImage);
   watch('dist/images/*.{jpg,png}', webpImage);
+  watch('dist/fonts', fonts);
 }
 
 exports.default = series(
@@ -48,5 +62,6 @@ exports.default = series(
   jsMin,
   optimizeImage,
   webpImage,
+  fonts,
   watchTask
 );

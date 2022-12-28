@@ -15,6 +15,8 @@
     "gulp-imagemin": "^6.2.0",
     "gulp-sass": "^5.1.0",
     "gulp-terser": "^2.1.0",
+    "gulp-ttf2woff": "^1.1.1",
+    "gulp-ttf2woff2": "^4.0.1",
     "gulp-webp": "^4.0.1",
     "imagemin-mozjpeg": "^10.0.0",
     "sass": "^1.56.2"
