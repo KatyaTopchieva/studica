@@ -5,6 +5,7 @@
   background-color: #FFF;
   margin: 0 auto;
   width: 100%;
+  padding: 0 32px/1280px * 100%;
   
   &__container {
     display: flex;
@@ -57,23 +58,18 @@
     letter-spacing: 0em;
     padding-top: 3px;
   }
-  
-  &__searchform {
-    display: flex;
-    flex-direction: row;
-    background: #F1F1F1;
-    border-radius: 100px;
-    width: 592px;
-    height: 48px;
-  }
 
-  &__searchform-wrapper {
-    width: 100%;
+  &__searchform {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    background: #F1F1F1;
     position: relative;
+    border-radius: 100px;
+    width: 592px/1216px * 100%;
+    min-width: 505px;
+    height: 48px;
   }
 
   &__searchform-icon {
@@ -120,7 +116,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 190px;
+    width: 190px/1216px * 100%;
+    min-width: 168px;
     height: 100%;
   }
 
@@ -159,11 +156,9 @@
   }
 
   &__profile-name {
-    font-size: 14px;
-    line-height: 22px;
     text-align: right;
-    color: #222;
     padding-top: 4px;
+    @extend .header__region-name
   }
 
   &__profile-avatar {
@@ -203,7 +198,7 @@
     top: 0;
     right: 0;
     content:'';
-    width: 130px;
+    width: 100%;
     height: 100%;    
     z-index: 1;
     background: linear-gradient(to right, rgba(255, 255, 255, 0), white 100%);
@@ -235,8 +230,8 @@
     width: 12px;
     height: 13px;
     position: absolute;
-    top: 4.5px;
-    right: 15px;
+    top: 6px;
+    right: 13px;
     padding-left: 4px;
     background: #FFF;
     z-index: 3;
